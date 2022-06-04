@@ -1,12 +1,12 @@
 <single-spa-router>
-  <!--
+    <!--
 
     This is the single-spa Layout Definition for your microfrontends.
     See https://single-spa.js.org/docs/layout-definition/ for more information.
 
   -->
 
-  <!-- Example layouts you might find helpful:
+    <!-- Example layouts you might find helpful:
 
   <nav>
     <application name="@org/navbar"></application>
@@ -17,16 +17,22 @@
 
   -->
 
-  <main>
-    <nav>
-      <application name="navbar"></application>
-    </nav>
-    <route default>
-      <application name="main-app"></application>
-    </route>
-    <footer>
-      <application name="footer-app"></application>
-    </footer>
-  </main>
+    <main>
+        <nav>
+            <application name="navbar"></application>
+        </nav>
+        <route default>
+            <application name="main-app"></application>
+        </route>
+        <route path="/contact">
+            <application name="contact-us"></application>
+        </route>
+        <route path="/about">
+            <application name="about-us"></application>
+        </route>
+        <footer>
+            <application name="footer-app"></application>
+        </footer>
+    </main>
 
 </single-spa-router>
