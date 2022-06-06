@@ -1,5 +1,22 @@
 <div class="about-section">
     <h1>About Us Page</h1>
     <p>Some text about who we are and what we do.</p>
-    <!-- <p>.</p> -->
+
+</div>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3 mt-5" *ngFor="let item of userList.data">
+            <div class="card">
+                <img src="{{item.avatar}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{item.first_name}} {{item.last_name}}</h5>
+                    <p class="card-text">{{item.email}}</p>
+                    <!-- <a class="btn btn-success" (click)="viewUser(item.id)">See Details</a>
+            <a class="btn btn-danger ms-2" (click)="deleteUser(item.id)">Delete</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
